@@ -138,6 +138,15 @@
                 }
                 isChecked = false;
                 searchMeals(isChecked); // Fetch default meal on page load
+
+                /* 
+                //This code will allow you to call search api as you type on search bar - but uses alot of API calls so just be wary not to overload it!
+                const searchQueryInput = document.getElementById('searchQuery');
+                searchQueryInput.addEventListener('input',function(){
+                    console.log(searchQueryInput.value);
+                    searchMeals(false);
+                });
+                /*/
             });
 
             // Add an event listener for change events
